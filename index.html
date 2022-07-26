@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="./css/style.css" />
     <!-- Custom style End -->
 
-    <!-- CONTROL: 20 july 9:00  -->
+    <!-- CONTROL: 26 july 9:00  -->
   </head>
 
   <body data-page>
@@ -560,15 +560,51 @@
 
 <div class="backdrop is-hidden" data-modal>
   <div class="modal">
-<button class="button-x" type="button" data-modal-close>
 
+<button class="button-x" type="button" data-modal-close>
   <svg class="" width="11" height="11">
     <use href="./images/icons.svg#icon-icon-close"></use>
   </svg>
-
 </button>
+
+<h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+
+
+<form class="modal-form">
+
+<div class="cell-block">
+<label class="cell-name" for="name">Имя</label>
+<input class="modal-cell" type="text" name="name" id="name">
+</div>
+
+<div class="cell-block">
+<label class="cell-name" for="tel">Телефон</label>
+<input class="modal-cell" type="tel" name="telephone" id="tel">
+</div>
+
+<div class="cell-block">
+<label class="cell-name" for="email">Почта</label>
+<input class="modal-cell" type="email" name="email" id="email">
+</div>
+
+<div class="cell-block">
+<label class="cell-name" for="comment">Комментарий</label>
+
+<textarea class="textarea-modal" name="comment" rows="6"
+ placeholder="Введите текст"></textarea>
+
+</div>
+
+<input type="checkbox" name="" value="" id="">
+
+<button class="button-modal" type="submit">Отправить</button>
+
+</form>
+
   </div>
 </div>
+
+<form action=""></form>
 
 <!-- СКРИПТЫ -->
 <script src="./js/modal.js"></script>

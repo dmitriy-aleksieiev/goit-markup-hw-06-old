@@ -14,6 +14,8 @@
   --border-color: #ececec;
   --bg-icon: #f5f4fa;
   --icons-color: #afb1b8;
+  --absolut-black: #000000;
+
 
   /* others */
   --anim-fast: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -691,7 +693,7 @@ transition: box-shadow var(--anim-fast);
 
 .modal {
   min-width: 528px;
-  min-height: 581px;
+  /* min-height: 581px; */
   background-color: var(--main_white-color);
   position: absolute;
   top: 50%;
@@ -715,6 +717,18 @@ transition: box-shadow var(--anim-fast);
   right: 8px;
   cursor: pointer;
 }
+
+.btn-x-img {
+fill: var(--absolut-black);
+
+}
+
+.btn-x-img:hover,
+.btn-x-img:focus {
+fill: var(--accent-color);
+
+}
+
 
 .modal-title {
 font-weight: 700;
@@ -753,6 +767,11 @@ margin-bottom: 4px;
   align-items: center;
   justify-content: center;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  margin-right: auto;
+  margin-left: auto;
+
+
+
 }
 
 .button-modal:hover,
@@ -764,6 +783,7 @@ margin-bottom: 4px;
   display: flex;
   flex-direction: column;
   gap: 10px;
+
 
 }
 
@@ -786,3 +806,29 @@ border-radius: 4px;
 .modal-cell {
   border-radius: 4px;
 } 
+
+.modal-checkbox-text {
+  font-weight: 400;
+font-size: 14px;
+line-height: calc(24/14);
+
+letter-spacing: 0.03em;
+}
+
+.cell-block-link {
+  text-decoration: underline;
+  color: #2196F3;
+  cursor: pointer;
+}
+
+.cell-block-checkbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 10px 0 20px 0;
+ 
+}
+
+.checkbox {
+  margin-right: 8px;
+}

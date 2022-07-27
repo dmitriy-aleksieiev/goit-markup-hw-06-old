@@ -553,68 +553,93 @@
             </li>
           </ul>
         </div>
+
+        <div class="footer-subscribe-block">
+          <p class="fsm-text">Подпишитесь на рассылку</p>
+          <input class="footer-cell-email" type="email" name="email" placeholder="E-mail" />
+          <button class="footer-button" type="button">Подписаться</button>
+        </div>
       </div>
     </footer>
 
-<!-- МОДАЛЬНОЕ ОКНО -->
+    <!-- МОДАЛЬНОЕ ОКНО -->
 
-<div class="backdrop is-hidden" data-modal>
-  <div class="modal">
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="button-x" type="button" data-modal-close>
+          <svg class="btn-x-img" width="11" height="11">
+            <use href="./images/icons.svg#icon-icon-close"></use>
+          </svg>
+        </button>
 
-<button class="button-x" type="button" data-modal-close>
-  <svg class="btn-x-img" width="11" height="11">
-    <use href="./images/icons.svg#icon-icon-close"></use>
-  </svg>
-</button>
+        <!-- <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2> -->
 
-<!-- <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2> -->
+        <form class="modal-form" name="modal-form">
+          <strong class="modal-title">Оставьте свои данные, мы вам перезвоним</strong>
 
+          <div class="cell-block-group">
+            <div class="cell-block">
+              <label class="cell-name" for="name">Имя</label>
+              <div class="modal-cell-block">
+                <input class="modal-cell" type="text" name="name" id="name" />
+                <svg class="icon-input" width="12" height="12">
+                  <use href="./images/icons/icons.svg#icon-modal-user"></use>
+                </svg>
+              </div>
+            </div>
 
-<form class="modal-form" name="modal-form">
+            <div class="cell-block">
+              <label class="cell-name" for="tel">Телефон</label>
 
-<strong class="modal-title">Оставьте свои данные, мы вам перезвоним</strong>
+              <div class="modal-cell-block">
+                <input class="modal-cell" type="tel" name="telephone" id="tel" />
+                <svg class="icon-input" width="12" height="12">
+                  <use href="./images/icons/icons.svg#icon-modal-phone"></use>
+                </svg>
+              </div>
+            </div>
 
-<div class="cell-block">
-<label class="cell-name" for="name">Имя</label>
-<input class="modal-cell" type="text" name="name" id="name">
-</div>
+              <div class="cell-block">
+                <label class="cell-name" for="email">Почта</label>
+                <input class="modal-cell" type="email" name="email" id="email" />
+              </div>
 
-<div class="cell-block">
-<label class="cell-name" for="tel">Телефон</label>
-<input class="modal-cell" type="tel" name="telephone" id="tel">
-</div>
+              <div class="cell-block">
+                <label class="cell-name" for="comment">Комментарий</label>
 
-<div class="cell-block">
-<label class="cell-name" for="email">Почта</label>
-<input class="modal-cell" type="email" name="email" id="email">
-</div>
+                <textarea
+                  class="textarea-modal"
+                  name="comment"
+                  rows="8"
+                  placeholder="Введите текст"
+                >
+                </textarea>
+              </div>
+            </div>
 
-<div class="cell-block">
-<label class="cell-name" for="comment">Комментарий</label>
+            <div class="cell-block-checkbox">
+              <input
+                class="checkbox"
+                type="checkbox"
+                name="checkbox"
+                value="Private-policy"
+                id="checkbox"
+              />
+              <label for="checkbox"
+                >Соглашаюсь с рассылкой и принимаю
+                <a class="cell-block-link" href="" target="_blank" rel="noopener noreferrer"
+                  >Условия договора</a
+                ></label
+              >
+            </div>
 
-<textarea class="textarea-modal" name="comment" rows="6"
- placeholder="Введите текст"></textarea>
+            <button class="button-modal" type="submit">Отправить</button>
+          </div>
+        </form>
+      </div>
+    </div>
 
-</div>
-
-<div class="cell-block-checkbox">
-  <input class="checkbox" type="checkbox" name="" value="" id="">
-  <p class="modal-checkbox-text">Соглашаюсь с рассылкой и принимаю 
-    <a class="cell-block-link">Условия договора</a></p></div>
-
-
-  <button class="button-modal" type="submit">Отправить</button>
-</div>
-
-
-</form>
-
-  </div>
-</div>
-
-<form action=""></form>
-
-<!-- СКРИПТЫ -->
-<script src="./js/modal.js"></script>
+    <!-- СКРИПТЫ -->
+    <script src="./js/modal.js"></script>
   </body>
 </html>

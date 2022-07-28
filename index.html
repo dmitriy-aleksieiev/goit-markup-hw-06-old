@@ -555,9 +555,17 @@
         </div>
 
         <div class="footer-subscribe-block">
-          <p class="fsm-text">Подпишитесь на рассылку</p>
+          <strong class="fsm-text">Подпишитесь на рассылку</strong>
+          <div class="footer-subscribe-block-down">
           <input class="footer-cell-email" type="email" name="email" placeholder="E-mail" />
-          <button class="footer-button" type="button">Подписаться</button>
+          <button class="footer-button" type="button">Подписаться
+            <svg class="icon-input-footer" width="24" height="24">
+              <use href="./images/icons/icons.svg#icon-paper-airplane"></use>
+            </svg>
+
+
+          </button>
+        </div>
         </div>
       </div>
     </footer>
@@ -601,7 +609,15 @@
 
               <div class="cell-block">
                 <label class="cell-name" for="email">Почта</label>
-                <input class="modal-cell" type="email" name="email" id="email" />
+                
+
+                <div class="modal-cell-block">
+                  <input class="modal-cell" type="email" name="email" id="email" />
+                  <svg class="icon-input" width="12" height="12">
+                    <use href="./images/icons/icons.svg#icon-modal-mail"></use>
+                  </svg>
+                </div>
+
               </div>
 
               <div class="cell-block">
@@ -626,7 +642,13 @@
                 id="checkbox"
               />
               <label for="checkbox"
-                >Соглашаюсь с рассылкой и принимаю
+                >
+                <!-- <svg class="icon-input" width="16" height="15">
+                  <use href="./images/icons/icons.svg#icon-checkbox-on"></use>
+                  <use href="./images/icons/icons.svg#icon-checkbox-off"></use>
+                </svg> -->
+                
+                Соглашаюсь с рассылкой и принимаю
                 <a class="cell-block-link" href="" target="_blank" rel="noopener noreferrer"
                   >Условия договора</a
                 ></label

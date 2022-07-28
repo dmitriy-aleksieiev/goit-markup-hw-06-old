@@ -423,6 +423,8 @@ img {
   align-items: center;
   justify-content: center;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  display: inline-flex;
+  gap: 10px;
 }
 
 .hero-button:hover,
@@ -805,7 +807,14 @@ color: rgba(117, 117, 117, 0.5);
 padding: 12px 16px;
 border-radius: 4px;
 resize: none;
+outline:none;
 }
+
+.textarea-modal:hover,
+.textarea-modal:focus {
+  border: 1px solid var(--accent-color);
+}
+
 
 
 .modal-checkbox-text {
@@ -891,4 +900,29 @@ outline:none;
 .modal-cell-block:focus-within .icon-input,
 .modal-cell-block:hover .icon-input {
   fill: #2196f3;
+}
+
+.icon-input-footer {
+  fill: var(--main_white-color)
+}
+
+.footer-subscribe-block {
+display: flex;
+flex-direction: column;
+
+  
+}
+
+.footer-subscribe-block-down {
+  display: flex;
+  gap: 12px;
+}
+
+.footer-cell-email {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
+background-color: transparent;
+padding: 15px 16px;
+min-width: 358px;
 }

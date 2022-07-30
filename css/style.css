@@ -812,12 +812,30 @@ img {
   cursor: pointer;
 }
 
-.cell-block-checkbox {
+/* .cell-block-checkbox {
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin: 20px 0 30px 0;
+} */
+
+
+.checkbox-label {
+  position: relative;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+
+  color: var(--description-color);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+
+  margin: 20px 0 30px 0;
 }
+
 
 .checkbox {
   margin-right: 8px;
@@ -892,19 +910,6 @@ img {
   min-width: 358px;
 }
 
-.checkbox-label {
-  position: relative;
-  font-size: 14px;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: calc(24 / 14);
-  letter-spacing: 0.03em;
-
-  color: var(--description-color);
-
-  display: flex;
-  gap: 7px;
-}
 
 .register-icon-uncheck {
   opacity: 1;
